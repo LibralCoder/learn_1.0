@@ -1,0 +1,16 @@
+
+Stream中间操作： limit,      skip,         filter  sorted  distinct    map
+               截取前几个    截取后几个      过滤     排序     去重        将每个元素映射成对应的结果
+Stream最终操作: foreach      count          collect                 
+               遍历         求元素的和       将流转为其他形式如整合为list，分组为map
+总结：
+Stream的创建有两种方式，分别是通过集合类的stream方法、通过Stream的of方法。
+
+Stream的中间操作可以用来处理Stream，中间操作的输入和输出都是Stream，中间操作可以是过滤、转换、排序等。
+
+Stream的最终操作可以将Stream转成其他形式，如计算出流中元素的个数、将流装换成集合、以及元素的遍历等。                    
+
+附录：
+ 对象相同hashCode必须相同
+ hashCode不同对象必须不同
+ 只有collection接口有stream API              

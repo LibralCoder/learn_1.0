@@ -1,0 +1,48 @@
+**泛型**
+泛型是为了规范容器中的类型而生的，它只在编译期有用。
+泛型使用有三种情况：
+             1.泛型类（紧跟类名后面）
+               泛型只有在实例对象时才会有，因此泛型属于实例不属于类；
+               泛型指定的类型不存在继承，实现关系，只能明确指定
+               类的泛型只对非静态有效（类里面的方法或类中再次声明同名泛型是允许的，并且该泛型会覆盖掉父类的同名泛型）
+               泛型的类型参数不能时普通类型，只能是类类型
+               instance of 后面不能加泛型，因为泛型属于实例不属于类     
+             2.泛型接口
+               /**
+                * 未传入泛型实参时，与泛型类的定义相同，在声明类的时候，需将泛型的声明也一起加到类中
+                * 即：class FruitGenerator<T> implements Generator<T>{
+                * 如果不声明泛型，如：class FruitGenerator implements Generator<T>，编译器会报错："Unknown class"
+                */
+               class FruitGenerator<T> implements Generator<T>{
+                   @Override
+                   public T next() {
+                       return null;
+                   }
+               }
+               /**
+                * 未传入泛型实参时，与泛型类的定义相同，在声明类的时候，需将泛型的声明也一起加到类中
+                * 即：class FruitGenerator<T> implements Generator<T>{
+                * 如果不声明泛型，如：class FruitGenerator implements Generator<T>，编译器会报错："Unknown class"
+                */
+               class FruitGenerator<T> implements Generator<T>{
+                   @Override
+                   public T next() {
+                       return null;
+                   }
+               }
+             3.泛型方法（紧跟修饰符后面返回值前面）
+             泛型类里用到泛型的方法不一定是泛型方法，
+             泛型方法的定义：调用方法时，入参明确指定泛型的具体类型
+             所有的方法要使用泛型必须先在public后声明一下
+              //该方法使用泛型T
+                 public <T> void test1() {
+                     T t = null;
+                     System.out.println(t);
+                 }
+                 //该方法使用泛型T
+                 //并且参数和返回值都是T类型
+                 public <T> T test2(T t) {
+                     System.out.println(t);
+                     return t;
+                 }
+ 

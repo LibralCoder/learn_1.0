@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Exeption" />
+        <module name="Debug" />
+        <module name="DesignPatterns" />
+        <module name="JVM" />
+        <module name="Stream" />
+        <module name="Generic" />
+        <module name="Gateway" />
+        <module name="Optional" />
+        <module name="log" />
+        <module name="StringHandler" />
+        <module name="Httpclient" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8" />
+  </component>
+</project>
