@@ -14,4 +14,5 @@ public class BizHandler {
     public Result<Object> queryMedicinesInfo(Map<String, String> param) {
       return null;
     }
+
 }
