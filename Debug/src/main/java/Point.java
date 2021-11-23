@@ -44,5 +44,6 @@ public class Point {
         //field();//字段异常
         //back();
         System.out.println("ceshi");
+        System.out.println("");
     }
 }
