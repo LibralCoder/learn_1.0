@@ -42,5 +42,6 @@ public class Point {
         //exception();//异常断点，用来追溯异常
         //field();//字段异常
         //back();
+        System.out.println("ceshi");
     }
 }
