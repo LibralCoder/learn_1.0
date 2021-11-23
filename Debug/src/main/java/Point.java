@@ -32,6 +32,7 @@ public class Point {
         person.setAge(12);
         person.setName("小明");
         System.out.println(person);
+        System.out.println("fdj");
     }
     public static void main(String[] args) {
         //line();行断点
