@@ -1,14 +1,17 @@
+/*
 import lombok.Builder;
 import lombok.Data;
 
 import java.util.Objects;
 
+*/
 /**
  * @author chaiguanguan
  * @className Vo
  * @description
  * @date 2020/2/20 9:19
- **/
+ **//*
+
 @Builder
 @Data
 public class Vo {
@@ -30,3 +33,4 @@ public class Vo {
         return Objects.hash(age);
     }
 }
+*/
