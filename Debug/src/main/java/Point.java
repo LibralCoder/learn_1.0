@@ -37,6 +37,7 @@ public class Point {
     public static void main(String[] args) {
         //line();行断点
         System.out.println("first");
+        System.out.println("second");
         detailLine();//详细行断点
         //method();//方法断点|在接口的方法上打断点，会在实现类的方法断点
         //exception();//异常断点，用来追溯异常
