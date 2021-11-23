@@ -33,6 +33,7 @@ public class Point {
         person.setName("小明");
         System.out.println(person);
         System.out.println("fdj");
+        System.out.println("咱不知道");
     }
     public static void main(String[] args) {
         //line();行断点
